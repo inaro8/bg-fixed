@@ -1,0 +1,57 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+}
+
+h1 {
+  padding: 30px;
+}
+
+.bg-section {
+  position: relative;
+}
+.bg-section .bg-section__area-bg {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.bg-section .bg-section__bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+}
+.bg-section .bg-section__bg.-bg01 {
+  background-image: url(../images/bg01.jpg);
+}
+.bg-section .bg-section__bg.-bg02 {
+  background-image: url(../images/bg02.jpg);
+}
+.bg-section .bg-section__bg.-bg03 {
+  background-image: url(../images/bg03.jpg);
+}
+.bg-section .bg-section__bg.-bg04 {
+  background-image: url(../images/bg04.jpg);
+}
+.bg-section .bg-section__inner {
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  min-height: 400px;
+  padding: 30px;
+}
+.bg-section .bg-section__inner h2 {
+  display: inline-block;
+  background-color: #fff;
+}
+
+.blank-section {
+  min-height: 400px;
+  padding: 30px;
+}
